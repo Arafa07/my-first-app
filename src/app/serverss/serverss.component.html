@@ -1,0 +1,26 @@
+<p>serverss works!</p>
+<h3>Hi From Component</h3>
+
+
+<input type="text" [(ngModel)]="funcShow2Way">
+<div>
+    <button (click)="onClickedFunc()">Click Me </button>
+</div>
+
+<h3>
+    {{funcShow2Way}}
+</h3>
+
+
+<h3>
+    <input type="text" [(ngModel)]="userName" (ngModelChange)="nameChanged()">
+</h3>
+
+<h4>
+    welcome {{userName}}
+</h4>
+
+
+<div>
+    <button [disabled]="notEmptyUserName" (click)="onUserNameFilled()">Click Me </button>
+</div>
